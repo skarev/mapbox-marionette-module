@@ -20,8 +20,11 @@ App.module('Mapbox', function(Mapbox, App, Backbone, Marionette, $, _) {
     var initializeMap = function(id, map_id, locate, onlocationfound) {
         map = L.mapbox.map(id, map_id);
         if (locate) {
-            map.on('locationfound', onlocationfound);
-            API.locate();
+            if (!navigator.geolocation) console.log('Geolocation is not supported');
+            else {
+                map.on('locationfound', onlocationfound);
+                API.locate();
+            }
         }
     };
 
@@ -79,7 +82,7 @@ App.module('Mapbox', function(Mapbox, App, Backbone, Marionette, $, _) {
 
     /*
      | ---------------------------------------------------
-     | Event Handlers
+     | Request Handlers
      | ---------------------------------------------------
      */
 
