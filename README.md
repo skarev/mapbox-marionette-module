@@ -13,7 +13,7 @@ Backbone Marionette based module for working with Mapbox map
 
 ##How to use
 
-Here is the simple html page whcih might be set up with the Mapbox.js
+Here is the simple html page which might be set up with the Mapbox.js
 ```html
 <html>
 <head>
