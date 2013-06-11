@@ -83,7 +83,7 @@ HTML div element which is used as holder of the map:
 
 The map is initialized by Request ([Marionette.RequestResponse](https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.requestresponse.md)):
 ```html
-App.request('map:init', 'map', 'skarev.map-u25o16nu', true, function(e) {
+App.request('map:init', 'map', 'examples.map-y7l23tes', true, function(e) {
     alert('Your location is determined: lng=' + e.latlng.lng + ', lat=' + e.latlng.lat);
 });
 ```
