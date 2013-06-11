@@ -68,6 +68,14 @@ Also we include necessary dependencies:
 <script src="js/vendor/bootstrap.min.js"></script>
 ```    
 
+Include main application module:
+```html
+<script src="js/App.js"></script>
+```
+Include mapbox module:
+```html 
+<script src="js/App.Mapbox.js"></script> 
+```
 HTML div element which is used as holder of the map:
 ```html
 <div id="map" class="dark" style="width: 100%; height: 100%;"></div>
